@@ -1,0 +1,180 @@
+
+body {
+  display: flex;
+  background-color: #ffffff;
+  font-family: "Roboto";
+}
+
+/* Conteúdo da esquerda */
+
+.boxleft{
+  margin: auto;
+  align-items: center;
+}
+
+form{
+  justify-content: center;
+}
+
+form h1{
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  margin: 2rem;
+}
+input {
+  border: solid 1.5px #000000;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #000000;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+label {
+  position: absolute;
+  left: 16px;
+  color: #000000;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input:focus {
+  outline: none;
+  border: 1.5px solid #0014c5;
+}
+input:focus ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #ffffff;
+  padding: 0 0.2em;
+  color: #17009c;
+}
+
+input:hover{
+  cursor: pointer;
+  border-color: #17009c;
+}
+
+/* Conteúdo da esquerda */
+
+/* Botão */
+
+#wrapper{
+ margin: 3rem;
+  
+}
+
+form a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  border-radius: 50px;
+
+}
+
+form a span{
+  position: relative;
+  z-index: 2;
+}
+
+form a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #cccccc;
+  transition: all .35s;
+  border-radius: 50px;
+}
+
+form a:hover{
+  color: #000000;
+}
+
+form a:hover:after{
+  width: 100%;
+}
+
+/* Botão */
+
+#social{
+  font-size: 30px;
+  text-align: center;
+}
+
+#social a{
+  margin: 2rem;
+  color: #9b9b9b;
+}
+
+#social a:hover{
+  color: #000000;
+}
+
+/* Footer */
+
+footer{
+  display: flex;
+}
+
+footer a{
+  text-decoration: none;
+  color: #17009c;
+}
+
+footer a:hover{
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+footer div{
+  margin: auto;
+}
+
+/* Footer */
+
+/* Conteúdo da direita */
+
+.boxright{
+  background-image: url(img1.avif);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vh;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: calc(100vh + 3rem);
+  border-radius: 20px;
+}
+
+@media (max-width: 600px){
+  .boxright{
+    background-image: none;
+    display: none;
+    justify-content: none;
+    height: none;
+    width: none;
+    background-position: none;
+    background-repeat: none;
+    background-size: none;
+    border-radius: none;
+  }
+}
+
+/* Conteúdo da direita */
